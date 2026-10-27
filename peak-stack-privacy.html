@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="description" content="Privacy Policy for Peak Stack, including advertising, purchases, local game data, and children’s privacy." />
+  <link rel="icon" href="data:," />
+  <title>Privacy Policy — Peak Stack</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --page: #f4f2ed;
+      --surface: #fffdf8;
+      --ink: #171814;
+      --muted: #5e6158;
+      --line: #d9d5ca;
+      --accent: #be4f28;
+      --accent-soft: #f5dfd4;
+      --accent-ink: #713018;
+      --chip: #ebe7dc;
+      --shadow: 0 24px 70px rgba(35, 31, 22, .11);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --page: #11130f;
+        --surface: #191b16;
+        --ink: #f4f2e9;
+        --muted: #bdc0b5;
+        --line: #35382f;
+        --accent: #f08a5f;
+        --accent-soft: #3f281f;
+        --accent-ink: #ffc1a7;
+        --chip: #282b24;
+        --shadow: 0 24px 70px rgba(0, 0, 0, .28);
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      min-width: 0;
+      background:
+        linear-gradient(90deg, var(--accent) 0 7px, transparent 7px),
+        var(--page);
+      color: var(--ink);
+      font-family: "Aptos", "Segoe UI", system-ui, sans-serif;
+      line-height: 1.68;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    main {
+      width: min(100% - 32px, 820px);
+      margin: clamp(22px, 5vw, 72px) auto;
+    }
+
+    article {
+      overflow: hidden;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 8px 26px 8px 8px;
+      box-shadow: var(--shadow);
+    }
+
+    header {
+      padding: clamp(30px, 7vw, 64px) clamp(24px, 7vw, 68px) clamp(28px, 5vw, 46px);
+      border-bottom: 1px solid var(--line);
+      background:
+        linear-gradient(135deg, var(--accent-soft), transparent 44%),
+        var(--surface);
+    }
+
+    .document-label {
+      margin: 0 0 12px;
+      color: var(--accent-ink);
+      font-size: .78rem;
+      font-weight: 750;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 650px;
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2.35rem, 8vw, 4.75rem);
+      font-weight: 500;
+      letter-spacing: -.045em;
+      line-height: .98;
+      text-wrap: balance;
+    }
+
+    .intro {
+      max-width: 630px;
+      margin: 24px 0 0;
+      color: var(--muted);
+      font-size: clamp(1.02rem, 2.1vw, 1.16rem);
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 24px;
+    }
+
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+      min-height: 32px;
+      padding: 5px 11px;
+      border-radius: 999px;
+      background: var(--chip);
+      color: var(--ink);
+      font-size: .82rem;
+      font-weight: 650;
+    }
+
+    .content {
+      padding: clamp(12px, 3vw, 22px) clamp(24px, 7vw, 68px) clamp(36px, 8vw, 76px);
+    }
+
+    section {
+      display: grid;
+      grid-template-columns: minmax(130px, 180px) minmax(0, 1fr);
+      gap: 22px clamp(24px, 6vw, 64px);
+      padding: clamp(25px, 5vw, 42px) 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    section:last-child { border-bottom: 0; }
+
+    h2 {
+      margin: 0;
+      font-size: .98rem;
+      font-weight: 780;
+      letter-spacing: -.01em;
+      line-height: 1.35;
+    }
+
+    .section-body { min-width: 0; }
+
+    section p,
+    section li {
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    section p { margin: 0; }
+    section p + p { margin-top: 13px; }
+
+    ul {
+      margin: 12px 0 0;
+      padding-left: 1.2rem;
+    }
+
+    li + li { margin-top: 10px; }
+    li::marker { color: var(--accent); }
+
+    strong { color: var(--ink); }
+
+    a {
+      color: var(--accent-ink);
+      font-weight: 700;
+      text-decoration-thickness: 1.5px;
+      text-underline-offset: 3px;
+      overflow-wrap: anywhere;
+    }
+
+    a:hover { text-decoration-thickness: 3px; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; border-radius: 2px; }
+
+    footer {
+      padding: 20px 24px 24px;
+      color: var(--muted);
+      font-size: .78rem;
+      text-align: center;
+    }
+
+    @media (max-width: 620px) {
+      body { background: var(--page); }
+      main { width: 100%; margin: 0; }
+      article { border: 0; border-radius: 0; box-shadow: none; min-height: 100vh; }
+      header { padding-top: max(34px, env(safe-area-inset-top)); }
+      section { grid-template-columns: 1fr; gap: 10px; }
+      footer { padding-bottom: max(24px, env(safe-area-inset-bottom)); }
+    }
+
+    @media print {
+      :root {
+        --page: #fff;
+        --surface: #fff;
+        --ink: #000;
+        --muted: #333;
+        --line: #bbb;
+        --accent-ink: #000;
+        --chip: #eee;
+      }
+      body { background: #fff; }
+      main { width: 100%; margin: 0; }
+      article { border: 0; box-shadow: none; }
+      header, .content { padding-left: 0; padding-right: 0; }
+      section { break-inside: avoid; }
+      footer { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article aria-labelledby="policy-title">
+      <header>
+        <p class="document-label">Peak Stack</p>
+        <h1 id="policy-title">Privacy Policy</h1>
+        <p class="intro">Peak Stack can be played offline. Advertising and optional purchases use Google services and require a network connection. This policy explains what information is handled when you use the game.</p>
+        <div class="meta" aria-label="Policy details">
+          <span>Effective October 10, 2026</span>
+          <span>No account required</span>
+          <span>Ads &amp; optional purchase</span>
+        </div>
+      </header>
+
+      <div class="content">
+        <section aria-labelledby="summary">
+          <h2 id="summary">At a glance</h2>
+          <div class="section-body">
+            <p><strong>Peak Stack does not ask for your name, email address, date of birth, contacts, photos, or precise location.</strong> The developer does not operate a user-account database or receive your payment-card details.</p>
+            <p>The game uses Google Mobile Ads for advertising and Google Play Billing for the optional “Remove Ads” purchase. Those Google services may process the limited technical and transaction information described below.</p>
+          </div>
+        </section>
+
+        <section aria-labelledby="local-data">
+          <h2 id="local-data">Data on your device</h2>
+          <div class="section-body">
+            <p>Game progress and preferences—such as best scores, unlocked themes, daily challenge progress, streaks, settings, and ad-free status—are stored in the app’s private storage on your device. Peak Stack does not upload this gameplay data to a developer-operated server.</p>
+            <p>Clearing the app’s storage or uninstalling it deletes local game data. A Google Play purchase may be restored from the Google account that made the purchase.</p>
+          </div>
+        </section>
+
+        <section aria-labelledby="advertising">
+          <h2 id="advertising">Advertising</h2>
+          <div class="section-body">
+            <p>Peak Stack uses the Google Mobile Ads SDK (AdMob) to show interstitial and rewarded ads. When an ad is requested or shown, Google may collect or receive:</p>
+            <ul>
+              <li><strong>Approximate location</strong> inferred from an IP address; the game does not request precise location.</li>
+              <li><strong>App interactions</strong>, such as ad views, taps, and interactions with the game or ad.</li>
+              <li><strong>Diagnostics</strong>, including technical performance and error information.</li>
+              <li><strong>Device or other identifiers</strong>, including the Android Advertising ID where permitted by device, account, age, and consent settings, and the app set ID used by Google Mobile Ads as a separate identifier associated with apps from the same developer on a device.</li>
+            </ul>
+            <p>This information may be used for advertising, analytics, ad measurement, and fraud prevention, security, and compliance. It is transmitted to Google using encrypted connections. Peak Stack does not sell this information.</p>
+            <p>Learn more about <a href="https://policies.google.com/technologies/partner-sites?hl=en-GB&amp;hl=en_GB" rel="noopener noreferrer">how Google uses information from apps that use its services</a> and review the <a href="https://policies.google.com/privacy?hl=en" rel="noopener noreferrer">Google Privacy Policy</a>.</p>
+          </div>
+        </section>
+
+        <section aria-labelledby="purchases">
+          <h2 id="purchases">Purchases</h2>
+          <div class="section-body">
+            <p>The optional “Remove Ads” purchase is processed by Google Play. Google handles payment details. Peak Stack receives purchase-related information needed to complete and restore the entitlement, such as the product purchased, purchase status, and a purchase token. The developer does not receive your full payment-card number.</p>
+          </div>
+        </section>
+
+        <section aria-labelledby="children-privacy">
+          <h2 id="children-privacy">Children’s privacy</h2>
+          <div class="section-body">
+            <p>Peak Stack’s Google Play audience includes players aged 6 and older. The game has no account creation, chat, social posting, or user-generated content, and it does not ask children to provide personal information directly.</p>
+            <p>Advertising shown to children or users of unknown age must use child-directed treatment, non-personalized ads, and child-appropriate ad content as required by Google Play’s Families Policy and applicable law. Parents or guardians with a privacy concern may contact us using the address below.</p>
+          </div>
+        </section>
+
+        <section aria-labelledby="choices">
+          <h2 id="choices">Your choices</h2>
+          <div class="section-body">
+            <ul>
+              <li>Purchase “Remove Ads” to stop standard ad placements in the game.</li>
+              <li>Use Android or Google account advertising controls to reset or limit use of the Advertising ID and manage ad personalization.</li>
+              <li>Clear Peak Stack’s storage or uninstall the app to delete locally stored game progress and preferences.</li>
+            </ul>
+            <p>Because Peak Stack has no accounts and stores no user profile on a developer-operated server, there is no developer account to delete. Requests concerning information held by Google should be made through Google’s privacy controls.</p>
+          </div>
+        </section>
+
+        <section aria-labelledby="retention-security">
+          <h2 id="retention-security">Retention &amp; security</h2>
+          <div class="section-body">
+            <p>Local game data remains on your device until you clear the app’s storage or uninstall it. Google determines retention for data processed through AdMob and Google Play under its own policies. Network data is encrypted in transit, but no method of electronic transmission or storage can be guaranteed completely secure.</p>
+          </div>
+        </section>
+
+        <section aria-labelledby="policy-changes">
+          <h2 id="policy-changes">Policy changes</h2>
+          <div class="section-body">
+            <p>This policy may be updated when Peak Stack’s features, service providers, or legal obligations change. The effective date at the top will be revised when an update is posted.</p>
+          </div>
+        </section>
+
+        <section aria-labelledby="contact">
+          <h2 id="contact">Contact</h2>
+          <div class="section-body">
+            <p>Questions or requests about this policy can be sent to <a href="mailto:Nepalgoesai@gmail.com">Nepalgoesai@gmail.com</a>.</p>
+          </div>
+        </section>
+      </div>
+    </article>
+    <footer>Peak Stack · Privacy Policy</footer>
+  </main>
+</body>
+</html>
